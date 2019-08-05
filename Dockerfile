@@ -1,5 +1,6 @@
-FROM alpine
+FROM ubuntu
 
 RUN set -xe \
-  && apk add --no-cache --purge -u cdrkit \
-  && rm -rf /var/cache/apk/* /tmp/*
+  && RUN  apt-get update \
+  && apt-get install -y wget genisoimage \
+  && rm -rf /var/lib/apt/lists/*
