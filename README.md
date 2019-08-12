@@ -1,2 +1,2 @@
 # mkisofs
-Build Alpine Docker image with mkisofs tool
+Build Ubuntu Docker image with mkisofs tool and curl
